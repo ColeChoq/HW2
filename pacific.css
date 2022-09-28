@@ -1,0 +1,288 @@
+/*
+
+  Colton Choquette, 
+  UMass Lowell Computer Science, 
+  colton_choquette@student.uml.edu 
+
+  File: Pacific.css
+
+  GUI Assignment:HW2
+
+  Copyright (c) 2022 by Colton. All rights reserved. May be freely copied or
+  excerpted for educational purposes with credit to the author.
+  updated by CC on September 27, 2022 at 8:40 pm
+
+  The purpose of this file is to provide the css styling to match the given web page
+
+*/
+
+header, hgroup, nav, footer, figure, figcaption, aside, section, article {
+	display: block;
+	
+}
+
+/*
+	Styling for body of the page
+		-Background is given image (required)
+		-The page is solid #00569f below the gradient (required)
+*/
+body {
+
+	color: #666666;
+	font-family: Arial, Helvetica, sans-serif;
+
+	/*Background*/
+	background-image: url("ptrbackground.jpg");
+	background-color: #00569f;
+	
+}
+
+
+/*
+	Styling for Navigation menu
+		-Float left to bring content to the side
+		-Set width 170px + 20px padding 190px total Fixed Width (required)
+*/
+nav{
+	/*Text Styling*/
+	float: left;
+	font-weight:bold;
+
+	/*Size Styling*/
+	width: 170px;
+	height:auto;
+
+	/*Margins*/
+	margin-right:20px;
+
+	/*Padding*/
+	padding-right:20px;
+
+	/*Background*/
+	background-color: rgb(144,200,227);
+	
+}
+
+/*
+	Styling for list elements
+	-No bullet points
+*/
+nav ul {
+	font-size: 1.2em;
+	list-style-type: none;
+}
+
+/*Styling for links
+	-No underline
+	-Color change
+*/
+nav a:link{
+	text-decoration: none;
+	color: #000033;
+	
+
+}
+
+
+/*Styling for visited link*/
+nav a:visited {
+	color: rgb(5, 8, 39);
+}
+
+/*Styling for hovering above link*/
+nav a:hover {
+	color: #FFFFFF;
+}
+
+
+/*
+	Styling for page header
+		-background image to the right with a matching background color 
+		 to make it looks like it takes up the whole background w/o 
+		 stretching
+*/
+h1 {
+	/*Text Styling*/
+	text-align: left;
+	color: white;
+
+	/*Size Styling*/
+	width:auto;
+	height:100%;
+	
+	/*Margins*/
+	margin-bottom: 0;
+
+	/*Padding*/
+	padding-top: 18px;
+	padding-left: 20px;
+	padding-bottom: 10px;
+
+	/*Background*/
+	background-image: url("sunset.jpg");
+	background-repeat: no-repeat;
+	background-position: right;
+	background-color: #000033;
+
+
+}
+
+/*
+	Header 2 styling
+*/
+h2 {
+	/*Font Styling*/
+	color: #3399CC;
+
+
+	/*Margins*/
+	margin: 0 0 0 0;
+
+	/*Padding*/
+	padding-left: 20px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	
+	/*Background*/
+	background-color: #FFFFFF;
+
+}
+
+/*Given code for Font style*/
+h1,
+h2 {
+	font-family: Georgia, "Times New Roman", serif;
+}
+
+
+	/*
+		Styling for contact info
+			-Left border to make the side menu appear to be full height
+
+	*/
+#contact {
+	/*Font Styling*/
+	font-size: 90%;
+
+	/*Padding*/
+	padding-left: 10px;
+
+	/*Border*/
+	border-left:190px;
+	border-color: rgb(144,200,227);
+}
+
+
+/*Styling for list in content*/
+#content > ul{
+	/*image replacing list dots*/
+	list-style-image: url('marker.gif');
+}
+
+
+
+/*
+		Styling for Image
+			-Float left so text will appear the the right of the image 
+
+	*/
+img {
+	/*Position Styling*/
+	float: left;
+
+	/*Padding*/
+	padding-left: 20px;
+	padding-right: 25px
+}
+
+	/*
+		Styling for main content
+			-Auto sizing to fit screen
+			-Left border to make the side menu appear to be full height
+
+	*/
+#content {
+	/*Size Styling*/
+	height:auto;
+	width:auto;
+
+	/*Padding*/
+	padding-left: 20px;
+	padding-right:20px;
+
+	/*Background*/
+	background-color: #FFFFFF;
+	
+	/*Border*/
+	border-left:solid 190px;
+	border-color: rgb(144,200,227);
+}
+
+
+
+	/*
+		Styling for Page
+			-auto margins to center on page
+			-80% width (required)
+			-600px min width (required)
+	*/
+#wrapper{
+
+	/*Margin Styling*/
+	margin-left: auto;
+	margin-right:auto;
+
+	/*Size Styling*/
+	width: 80%;
+	min-width: 600px;
+
+}
+
+
+	/*
+		Styling for "Pacific Trails Resort" in 2 places
+	*/
+.resort{
+	/*Font Styling*/
+	font-weight:bold ;
+
+	/*Text Color*/
+	color: rgb(158, 183, 205);
+}
+
+	/*
+		Unknown given starter code
+	*/
+dt {
+	color: #000033;
+}
+
+
+	/*
+		Styling for footer
+			-automatic height & width to change with screen size
+			-Left border to make the side menu appear to be full height
+	*/
+footer {
+	/*Font Styling*/
+	font-family: Georgia, "Times New Roman", serif;
+	font-style: italic;
+	font-size: 12px;
+	
+	/*Size Styling*/
+	height:auto;
+	width:auto;
+	
+	/*Padding*/
+	padding-left: 20px;
+	padding-bottom:20px;
+	padding-right:20px;
+
+	/*Background*/
+	background-color: #FFFFFF;
+
+	/*Border*/
+	border-left:solid 190px;
+	border-color: rgb(144,200,227);
+}
+
